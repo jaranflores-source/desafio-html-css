@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Explicativa del Proyecto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Guía Explicativa de Maquetación y Semántica Web</h1>
+        <p>Documentación técnica sobre las decisiones de diseño e implementación del portal.</p>
+    </header>
+
+    <main>
+        <!-- Sección 1: Semántica HTML5 -->
+        <section>
+            <h2>1. Justificación de Etiquetas Semánticas</h2>
+            <article>
+                <h3>Estructura Principal</h3>
+                <p><strong>&lt;header&gt;:</strong> Se utilizó para agrupar el título principal y la presentación del portal.</p>
+                <p><strong>&lt;nav&gt;:</strong> Contiene el menú de navegación para facilitar el desplazamiento del usuario.</p>
+                <p><strong>&lt;main&gt;:</strong> Define el núcleo del documento, asegurando que los motores de búsqueda identifiquen el contenido relevante.</p>
+                <p><strong>&lt;section&gt; y &lt;article&gt;:</strong> Permiten fragmentar la información en bloques lógicos y contenidos auto-contenidos.</p>
+                <p><strong>&lt;aside&gt;:</strong> Se destinó a la barra lateral con información complementaria al tema principal.</p>
+                <p><strong>&lt;figure&gt; y &lt;figcaption&gt;:</strong> Utilizadas para asociar semánticamente las imágenes con sus textos explicativos.</p>
+                <p><strong>&lt;footer&gt;:</strong> Ubicado al final de la página para los créditos y derechos de autor.</p>
+            </article>
+        </section>
+
+        <!-- Sección 2: Estrategia de Diseño Fluido -->
+        <section>
+            <h2>2. Estrategia Técnica de Diseño Fluido</h2>
+            <article>
+                <h3>Técnicas de Adaptabilidad Tradicional</h3>
+                <ul>
+                    <li><strong>Anchos en Porcentajes (%):</strong> Se definieron los anchos de los contenedores mediante porcentajes para que la maquetación se escale en función del tamaño de la ventana.</li>
+                    <li><strong>Maquetación con Inline-Block / Float:</strong> Permite alinear secciones en columnas sin requerir esquemas de diseño modernos.</li>
+                    <li><strong>Multimedia Escalable:</strong> Se aplicó <code>max-width: 100%</code> y <code>height: auto</code> a las imágenes para garantizar que no sobrepasen el ancho de su contenedor.</li>
+                    <li><strong>Limpieza de Flotados (Clearfix):</strong> Implementado para restaurar el flujo del documento y evitar desbordamientos en elementos contenedores con float.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Proyecto de Maquetación Web Tradicional</p>
+    </footer>
+
+</body>
+</html>
